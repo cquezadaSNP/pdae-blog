@@ -1,4 +1,11 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
-<div class="post-content">{{ .Content }}</div>
+<div class="post-container">
+  <p class="text-jungle-green">
+    <em
+      >Última actualización <span class="fw-bold">18 de Abril de 2021</span></em
+    >
+  </p>
+  <h1 class="text-blue-sapphire fs-52 fw-bold mt-0">{{ .Title }}</h1>
+  <div class="post-content">{{ .Content }}</div>
+</div>
 {{ end }}
