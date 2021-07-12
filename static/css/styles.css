@@ -1,11 +1,11 @@
 @font-face {
-  font-family: 'Museo Sans';
+  font-family: "Museo Sans";
   src: url(/fonts/MuseoSans-300.otf);
   font-weight: 300;
 }
 
 @font-face {
-  font-family: 'Museo Sans';
+  font-family: "Museo Sans";
   src: url(/fonts/MuseoSans_700.otf);
   font-weight: 700;
 }
@@ -19,6 +19,12 @@
   --white: #ffffff;
 }
 
+/* New Colors */
+
+/* #ffcb00
+    #005aa6 
+    #e1231d  */
+
 /*
 / =========
 / Overrides
@@ -26,7 +32,7 @@
 */
 
 body {
-  font-family: 'Museo Sans', sans-serif;
+  font-family: "Museo Sans", sans-serif;
   font-weight: 300;
   font-size: 16px;
   background: var(--cultured);
@@ -55,7 +61,7 @@ a:hover {
 
 .panel-title > a::after {
   background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAxNiAxNicgZmlsbD0nI2ZmZmZmZic+PHBhdGggZmlsbC1ydWxlPSdldmVub2RkJyBkPSdNMS42NDYgNC42NDZhLjUuNSAwIDAgMSAuNzA4IDBMOCAxMC4yOTNsNS42NDYtNS42NDdhLjUuNSAwIDAgMSAuNzA4LjcwOGwtNiA2YS41LjUgMCAwIDEtLjcwOCAwbC02LTZhLjUuNSAwIDAgMSAwLS43MDh6Jy8+PC9zdmc+);
-  content: '';
+  content: "";
   height: 16px;
   position: absolute;
   right: 0;
@@ -101,6 +107,7 @@ a:hover {
 .btn {
   border-radius: 0;
   font-size: 16px;
+  text-align: left;
 }
 
 .btn-lg {
@@ -288,10 +295,18 @@ a:hover {
 }
 
 .flag {
-  height: 10px;
+  /* height: 10px;
   background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMzY2IiBoZWlnaHQ9IjEwIj48cGF0aCBmaWxsPSIjZmY5YTIyIiBkPSJNMCAwaDY4M3YxMEgweiIvPjxwYXRoIGZpbGw9IiMxZDZkN2YiIGQ9Ik02ODMgMGgzNDF2MTBINjgzeiIvPjxwYXRoIGZpbGw9IiNlMjQzMjkiIGQ9Ik0xMDI0IDBoMzQydjEwaC0zNDJ6Ii8+PC9zdmc+);
   background-size: contain;
-  background-position: center;
+  background-position: center; */
+  height: 8px;
+  background-image: linear-gradient(
+    to right,
+    #ffcb00 50%,
+    #005aa6 50% 75%,
+    #e1231d 75%
+  );
+  background-size: cover;
 }
 
 .footer-section {
@@ -423,20 +438,20 @@ a:hover {
   .fs-22 {
     font-size: 22px;
   }
-  
+
   .fs-35 {
     font-size: 35px;
   }
-  
+
   .fs-52 {
     font-size: 52px;
   }
-  
+
   .footer-section-top-col {
     margin-bottom: 0;
     text-align: left;
   }
-  
+
   .footer-section-bottom-row {
     align-items: center;
     gap: 30px;
