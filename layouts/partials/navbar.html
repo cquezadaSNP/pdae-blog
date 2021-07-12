@@ -1,0 +1,54 @@
+<header>
+  <nav class="bg-cultured" data-module="pdae_theme_navbar" data-module-trigger="navbar-switch" data-module-target="navbar-menu">
+    <div class="container-fluid">
+      <ul class="pdae-navbar pdae-navbar-xs">
+        <li class="pdae-nav-item pdae-nav-logo">
+          <a href="{{ .Site.BaseURL }}" style="line-height: 1;">
+            <span>Datos</span>
+            <span class="d-block fw-bold">Anticorrupción</span>
+          </a>
+        </li>
+        <li class="pdae-nav-item">
+          <button class="fs-35 btn bg-cultured text-blue-sapphire navbar-switch">
+            <i class="bi bi-list"></i>
+          </button>
+        </li>
+      </ul>
+      <ul class="pdae-navbar pdae-navbar-md" id="navbar-menu">
+        <li class="pdae-nav-item text-end hidden-md hidden-lg">
+          <button class="fs-22 btn btn-blue-sapphire navbar-switch">
+            <i class="bi bi-x-lg"></i>
+          </button>
+        </li>
+        <li class="pdae-nav-item hidden-xs hidden-sm pdae-nav-logo">
+          <a href="{{ .Site.BaseURL }}" style="line-height: 1;">
+            <span>Datos</span>
+            <span class="d-block fw-bold">Anticorrupción</span>
+          </a>
+        </li>
+        <li class="pdae-nav-item active">
+          <a href="{{ .Site.BaseURL }}" class="">
+            Inicio
+          </a>
+        </li>
+        <li class="pdae-nav-item">
+          <a href="#" class="">
+            Sobre esta página
+          </a>
+        </li>
+        <li class="pdae-nav-item">
+          <a href="#" class="">
+            Catálogo de datos
+          </a>
+        </li>
+        <li class="pdae-nav-item flex-shrink-0">
+          <a href="#" class="btn btn-blue-sapphire fw-light">
+            Ir al Portal de Datos Abiertos
+          </a>
+        </li>
+      </ul>
+      <div class="pdae-nav-overlay"></div>
+    </div>
+  </nav>
+  <div class="flag"></div>
+</header>
