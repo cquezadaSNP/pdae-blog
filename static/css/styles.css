@@ -12,6 +12,7 @@
 
 :root {
   --blue-sapphire: #0f5a6b;
+  --space-cadet: #20295c;
   --cultured: #fbf9f8;
   --eagle-green: #0a3f4c;
   --jungle-green: #102223;
@@ -86,6 +87,10 @@ a:hover {
 
 .bg-cultured {
   background-color: var(--cultured);
+}
+
+.bg-space-cadet {
+  background-color: var(--space-cadet);
 }
 
 .bg-blue-sapphire {
@@ -310,9 +315,18 @@ a:hover {
 }
 
 .footer-section {
+  position: relative;
   color: var(--white);
   padding-bottom: 32px;
   padding-top: 32px;
+}
+
+.footer-gov {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: calc(100% / 3);
 }
 
 .footer-section-top-col {
@@ -504,4 +518,10 @@ a:hover {
   .pdae-navbar-md.navbar-open + .pdae-nav-overlay {
     display: none;
   }
+}
+
+.post-container {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 112px 69px 31px 75px;
 }
