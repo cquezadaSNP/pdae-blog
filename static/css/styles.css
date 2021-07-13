@@ -521,7 +521,37 @@ a:hover {
 }
 
 .post-container {
+  width: 95%;
   max-width: 950px;
   margin: 0 auto;
   padding: 112px 69px 31px 75px;
+}
+
+.post-content h2 {
+  font-size: 35px;
+  color: var(--blue-sapphire);
+}
+
+.post-content p {
+  margin-bottom: 20px;
+}
+
+.post-content blockquote {
+  font-size: 22px;
+  color: var(--blue-sapphire);
+  font-weight: bold;
+  border-left: 0;
+  padding: 0;
+}
+
+.post-content a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+  .post-container {
+    width: 100%;
+    padding: 56px 34.5px 15.5px 37.5px;
+  }
 }
