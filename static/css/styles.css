@@ -520,6 +520,14 @@ a:hover {
   }
 }
 
+.post-card {
+  display: block;
+}
+
+.post-card:hover {
+  text-decoration: none;
+}
+
 .post-container {
   width: 95%;
   max-width: 950px;
