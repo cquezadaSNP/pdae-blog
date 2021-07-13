@@ -1,2 +1,4 @@
 baseURL = "/"
 title = "Datos Abiertos Ecuador"
+paginate = 5
+paginatePath = 'pagina'

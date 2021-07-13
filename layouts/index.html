@@ -5,9 +5,8 @@
       <div class="col-md-10 col-md-offset-1">
         <h2 class="text-blue-sapphire text-center fw-bold fs-52">Blog</h2>
         <div class="d-grid gap-16 mt-32">
-          {{ range .Pages }}
-            {{ partial "post-card.html" . }}
-          {{ end }}
+          {{ range .Paginator.Pages }} {{ partial "post-card.html" . }} {{ end
+          }} {{ template "_internal/pagination.html" . }}
         </div>
       </div>
     </div>
