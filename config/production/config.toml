@@ -1,0 +1,5 @@
+baseURL = "https://blog-pdae.netlify.app/"
+title = "Datos Abiertos Ecuador"
+paginate = 5
+paginatePath = 'pagina'
+taxonomies = []
