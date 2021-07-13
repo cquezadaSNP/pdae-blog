@@ -8,7 +8,9 @@
           {{ range .Paginator.Pages }}
             {{ partial "post-card.html" . }}
           {{ end }}
-          {{ template "_internal/pagination.html" . }}
+          <div class="text-center">
+            {{ template "_internal/pagination.html" . }}
+          </div>
         </div>
       </div>
     </div>
