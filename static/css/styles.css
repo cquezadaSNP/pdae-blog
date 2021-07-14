@@ -470,7 +470,7 @@ a:hover {
 }
 
 .text-jungle-green {
-  color: var(----jungle-green);
+  color: var(--jungle-green);
 }
 
 .text-sinopia {
@@ -698,7 +698,7 @@ a:hover {
 
 .pdae-navbar-md.navbar-open + .pdae-nav-overlay {
   position: fixed;
-  background-color: var(----jungle-green);
+  background-color: var(--jungle-green);
   opacity: 0.85;
   top: 0;
   left: 0;
@@ -856,13 +856,21 @@ a:hover {
   padding: 112px 69px 31px 75px;
 }
 
+.post-content > :first-child {
+  margin-top: 24px;
+}
+
+.post-content > * ~ * {
+  margin-top: 24px;
+}
+
 .post-content h2 {
   font-size: 35px;
   color: var(--blue-sapphire);
 }
 
 .post-content p {
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 
 .post-content blockquote {
