@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  {{ partial "head.html" . }}
+<body>
+  {{ partial "navbar.html" . }}
+  <main>
+    <div class="learn-resources">
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs nav-justified pt-32" role="tablist" style="background-color: #e8e4e2;">
+        {{ $current_page := . }}
+        {{ range .Site.Menus.learn }}
+          <li role="presentation"{{ if $current_page.IsMenuCurrent "learn" . }} class="active"{{ end }}>
+            <a href="{{ .Page.RelPermalink }}">{{ .Title }}</a>
+          </li>
+        {{ end }}
+      </ul>
+      <!-- Tab panes -->
+      {{ block "main" . }}{{ end }}
+    </div>
+  </main>
+  {{ partial "footer.html" . }}
+  {{ partial "script.html" . }}
+</body>
+</html>
