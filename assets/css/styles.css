@@ -36,7 +36,8 @@ body {
 }
 
 a,
-a:hover {
+a:hover,
+a:focus {
   color: inherit;
 }
 
@@ -558,6 +559,21 @@ a:hover {
 / Components
 / =========
 */
+
+.app-container {
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+  width: 100%;
+}
+
+.app-container iframe {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
 
 .announce {
   align-items: flex-start;
