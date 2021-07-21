@@ -1,13 +1,29 @@
-<a href="{{ .RelPermalink }}" class="post-card">
-  <div class="bg-white p-20">
-    <h2 class="text-blue-sapphire fs-22 fw-bold mt-0">
-      {{ .Title }}
-    </h2>
-    <p class="text-jungle-green mt-16">
-      {{ .Description }}
-    </p>
-    <p class="text-jungle-green">
-      <em>Última actualización <span class="fw-bold">{{ .Date.Day }} de {{ index $.Site.Data.months (printf "%d" .Date.Month) }} de {{ .Date.Year }}</span></em>
-    </p>
+{{ if .Params.standalone }}
+  <div class="post-card">
+    <div class="bg-white p-20">
+      <h2 class="text-blue-sapphire fs-22 fw-bold mt-0">
+        {{ .Title }}
+      </h2>
+      <div class="text-jungle-green mt-16 post-content">
+        {{ .Content }}
+      </div>
+      <p class="text-jungle-green mt-16">
+        <em>Última actualización <span class="fw-bold">{{ .Date.Day }} de {{ index $.Site.Data.months (printf "%d" .Date.Month) }} de {{ .Date.Year }}</span></em>
+      </p>
+    </div>
   </div>
-</a>
+{{ else }}
+  <a href="{{ .RelPermalink }}" class="post-card">
+    <div class="bg-white p-20">
+      <h2 class="text-blue-sapphire fs-22 fw-bold mt-0">
+        {{ .Title }}
+      </h2>
+      <p class="text-jungle-green mt-16">
+        {{ .Description }}
+      </p>
+      <p class="text-jungle-green">
+        <em>Última actualización <span class="fw-bold">{{ .Date.Day }} de {{ index $.Site.Data.months (printf "%d" .Date.Month) }} de {{ .Date.Year }}</span></em>
+      </p>
+    </div>
+  </a>
+{{ end }}
