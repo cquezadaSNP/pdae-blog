@@ -1,5 +1,5 @@
 ---
-title: Nuevo contenido
+title: Nuevo contenido 2
 description: Hola soy un post
 author: Planifica
 image: /uploads/desafios-datos-abiertos.png
