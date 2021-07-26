@@ -1,0 +1,10 @@
+{{ define "main" }}
+  <div class="container py-16">
+    <div class="post-content">
+      {{ .Content }}
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="{{ .Params.form_url }}"></iframe>
+      </div>
+    </div>
+  </div>
+{{ end }}
