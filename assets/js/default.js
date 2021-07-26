@@ -11,6 +11,6 @@ const target = document.getElementById(options.target)
 
 triggers.forEach(trigger => {
   trigger.addEventListener('click', () => {
-    target.classList.toggle('navbar-open')
+    target.classList.toggle('nav-open')
   })
 })

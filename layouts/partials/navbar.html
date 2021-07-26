@@ -1,33 +1,27 @@
 <header>
-  <nav
-    class="bg-cultured"
-    data-module="pdae_theme_navbar"
-    data-module-trigger="navbar-switch"
-    data-module-target="navbar-menu"
-  >
+  <nav class="bg-cultured" data-module="pdae_theme_navbar" data-module-trigger="navbar-switch" data-module-target="navbar-menu">
     <div class="container-fluid">
-      <ul class="pdae-navbar pdae-navbar-xs">
-        <li class="pdae-nav-item pdae-nav-logo">
-          <a href="http://pdae.datasketch.co/" style="line-height: 1">
-            <img class="img-responsive center-block" src="{{
-            "images/site-logo.svg" | absURL }}" alt="logo pagina" />
+      <ul class="pdae-nav-xs list-unstyled mb-0">
+        <li class="pdae-nav-item">
+          <a href="http://pdae.datasketch.co/">
+            <img src="{{ "images/site-logo.svg" | absURL }}" alt="Datos Abiertos Ecuador">
           </a>
         </li>
         <li class="pdae-nav-item">
-          <button class="fs-35 btn bg-cultured text-blue-sapphire navbar-switch">
+          <button class="btn bg-cultured text-blue-sapphire fs-35 navbar-switch">
             <i class="bi bi-list"></i>
           </button>
         </li>
       </ul>
-      <ul class="pdae-navbar pdae-navbar-md" id="navbar-menu">
-        <li class="pdae-nav-item text-end hidden-md hidden-lg">
+      <ul class="pdae-nav-md list-unstyled mb-0" id="navbar-menu">
+        <li class="pdae-nav-item text-end visible-xs visible-sm">
           <button class="fs-22 btn btn-blue-sapphire navbar-switch">
             <i class="bi bi-x-lg"></i>
           </button>
         </li>
-        <li class="pdae-nav-item hidden-xs hidden-sm pdae-nav-logo">
-          <a href="http://pdae.datasketch.co/" style="line-height: 1">
-            <img class="img-responsive center-block" src="{{ "images/site-logo.svg" | absURL }}" alt="logo pagina" />
+        <li class="pdae-nav-item hidden-xs hidden-sm">
+          <a href="http://pdae.datasketch.co/">
+            <img src="{{ "images/site-logo.svg" | absURL }}" alt="">
           </a>
         </li>
         <li class="pdae-nav-item">
@@ -36,12 +30,12 @@
           </a>
         </li>
         <li class="pdae-nav-item">
-          <a href="http://pdae.datasketch.co/dataset/">
-            Catálogo de Datos Abiertos
+          <a href="http://pdae.datasketch.co/dataset">
+            Catálogo de<br>Datos Abiertos
           </a>
         </li>
         <li class="pdae-nav-item">
-          <a href="http://pdae.datasketch.co/blog/">
+          <a href="http://pdae.datasketch.co/blog">
             Blog / Noticias
           </a>
         </li>
@@ -51,17 +45,31 @@
           </a>
         </li>
         <li class="pdae-nav-item">
-          <a href="http://pdae.datasketch.co/centro-de-aprendizaje/preguntas-frecuentes">
+          <span href="#">
             Centro de aprendizaje
-          </a>
+          </span>
+          <ul class="pdae-nav-submenu list-unstyled mb-0">
+            <li class="hidden-xs hidden-sm">
+              <span>Centro de aprendizaje</span>
+            </li>
+            <li>
+              <a href="http://pdae.datasketch.co/centro-de-aprendizaje/preguntas-frecuentes">Preguntas frecuentes</a>
+            </li>
+            <li>
+              <a href="http://pdae.datasketch.co/centro-de-aprendizaje/manuales">Manuales de usuario</a>
+            </li>
+            <li>
+              <a href="http://pdae.datasketch.co/centro-de-aprendizaje/cursos">Cursos de capacitación</a>
+            </li>
+          </ul>
         </li>
         <li class="pdae-nav-item">
           <a href="#">
-            Participación ciudadana
+            Participación<br>ciudadana
           </a>
         </li>
-        <li class="pdae-nav-item flex-shrink-0">
-          <a href="http://pdae.datasketch.co/user/login" class="btn btn-blue-sapphire fw-light">
+        <li class="pdae-nav-item">
+          <a href="http://pdae.datasketch.co/user/login" class="btn pdae-nav-login">
             Iniciar sesión
           </a>
         </li>
