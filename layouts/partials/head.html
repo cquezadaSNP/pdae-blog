@@ -2,14 +2,29 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
   {{ $styles := resources.Get "css/styles.css" | minify }}
   <link rel="stylesheet" href="{{ $styles.Permalink | absURL }}">
+
+  {{ if eq hugo.Environment "production" }}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-983H1L4B69"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-983H1L4B69');
+    </script>
+  {{ end }}
+
   {{ if .Title }}
     <title>{{ .Title }} - {{ .Site.Title }}</title>
   {{ else }}
     <title>{{ .Site.Title }}</title>
   {{ end }}
+
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
