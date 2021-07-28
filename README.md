@@ -18,4 +18,8 @@ location /normativa/ {
 location /centro-de-aprendizaje/ {
     proxy_pass https://blog-pdae.netlify.app/centro-de-aprendizaje/;
 }
+
+location /info/ {
+    proxy_pass https://blog-pdae.netlify.app/info/;
+}
 ```
