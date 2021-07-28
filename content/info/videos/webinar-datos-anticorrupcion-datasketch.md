@@ -1,7 +1,9 @@
 ---
-title: Webinar datos para la lucha anticorrupción - Datasketch
+title: "Sesión de capacitación: Datos para la lucha anti-corrupción"
 image: 
-youtube_url: https://www.youtube.com/watch?v=bpHO0--iHv8
+date: 2021-07-27
+category: Webinar
+youtube_url: https://www.youtube.com/watch?v=bpHO0--iHv8&ab_channel=Datasketch
 ---
 
 
