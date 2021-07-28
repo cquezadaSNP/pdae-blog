@@ -3,3 +3,14 @@ title = "Datos Abiertos Ecuador"
 paginate = 10
 paginatePath = 'pagina'
 taxonomies = []
+
+[params]
+    [params.menu_labels]
+        dataset = "Catálogo de Datos Abiertos"
+        blog = "Blog / Noticias"
+        regulations = "Normativa"
+        learn = "Centro de aprendizaje"
+        faq = "Preguntas frecuentes"
+        manuals = "Manuales de usuario"
+        courses = "Cursos de capacitación"
+        participation = "Participación ciudadana"
