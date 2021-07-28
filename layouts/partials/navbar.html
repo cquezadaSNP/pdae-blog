@@ -31,41 +31,47 @@
         </li>
         <li class="pdae-nav-item">
           <a href="http://pdae.datasketch.co/dataset">
-            Catálogo de<br>Datos Abiertos
+            {{ .Site.Params.menu_labels.dataset }}
           </a>
         </li>
         <li class="pdae-nav-item">
           <a href="http://pdae.datasketch.co/blog">
-            Blog / Noticias
+            {{ .Site.Params.menu_labels.blog }}
           </a>
         </li>
         <li class="pdae-nav-item">
           <a href="http://pdae.datasketch.co/normativa">
-            Normativa
+            {{ .Site.Params.menu_labels.regulations }}
           </a>
         </li>
         <li class="pdae-nav-item">
           <span href="#">
-            Centro de aprendizaje
+            {{ .Site.Params.menu_labels.learn }}
           </span>
           <ul class="pdae-nav-submenu list-unstyled mb-0">
             <li class="hidden-xs hidden-sm">
-              <span>Centro de aprendizaje</span>
+              <span>{{ .Site.Params.menu_labels.learn }}</span>
             </li>
             <li>
-              <a href="http://pdae.datasketch.co/centro-de-aprendizaje/preguntas-frecuentes">Preguntas frecuentes</a>
+              <a href="http://pdae.datasketch.co/centro-de-aprendizaje/preguntas-frecuentes">
+                {{ .Site.Params.menu_labels.faq }}
+              </a>
             </li>
             <li>
-              <a href="http://pdae.datasketch.co/centro-de-aprendizaje/manuales">Manuales de usuario</a>
+              <a href="http://pdae.datasketch.co/centro-de-aprendizaje/manuales">
+                {{ .Site.Params.menu_labels.manuals }}
+              </a>
             </li>
             <li>
-              <a href="http://pdae.datasketch.co/centro-de-aprendizaje/cursos">Cursos de capacitación</a>
+              <a href="http://pdae.datasketch.co/centro-de-aprendizaje/cursos">
+                {{ .Site.Params.menu_labels.courses }}
+              </a>
             </li>
           </ul>
         </li>
         <li class="pdae-nav-item">
           <a href="#">
-            Participación<br>ciudadana
+            {{ .Site.Params.menu_labels.participation }}
           </a>
         </li>
         <li class="pdae-nav-item">
